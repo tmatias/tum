@@ -1,0 +1,25 @@
+{
+  "name": "tum",
+  "version": "0.1.0",
+  "description": "The Unserious Manifest",
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "start": "./node_modules/gulp/bin/gulp.js start"
+  },
+  "keywords": [
+    "unserious",
+    "manisfest"
+  ],
+  "author": "Rafael Camargo <hello@rafaelcamargo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1",
+    "yargs": "^9.0.1"
+  }
+}

@@ -1,0 +1,13 @@
+extends ./layouts/standard.pug
+include ./components/section.pug
+include ./components/logo.pug
+include ./components/manifest.pug
+include ./components/credits.pug
+
+block content
+  +section()
+    +logo()
+  +section()
+    +manifest()
+  +section()
+    +credits()

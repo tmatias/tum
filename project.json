@@ -1,0 +1,35 @@
+{
+  "templates": {
+    "src": {
+      "files": [
+        "src/templates/**/*.pug"
+      ],
+      "exclude": [
+        "!src/templates/layouts/**/*.pug",
+        "!src/templates/components/**/*.pug"
+      ]
+    },
+    "dist": {
+      "root": "dist/",
+      "files": "dist/**/*.html"
+    }
+  },
+  "styles": {
+    "src": {
+      "files": "src/styles/**/*.styl"
+    },
+    "dist": {
+      "root": "dist/styles",
+      "file": "dist/styles/styles.min.css",
+      "filename": "styles.min.css"
+    }
+  },
+  "images": {
+    "src": {
+      "files": "src/images/**/*.*"
+    },
+    "dist": {
+      "root": "dist/images"
+    }
+  }
+}
