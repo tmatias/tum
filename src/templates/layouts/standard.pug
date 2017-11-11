@@ -1,4 +1,5 @@
 include ../components/viewport.pug
+include ../components/footer.pug
 
 doctype
 html
@@ -16,10 +17,13 @@ html
     meta(http-equiv="pragma" content="no-cache")
     meta(name="robots" content="index, follow")
     meta(name="googlebot" content="index, follow")
-    link(rel="icon" href="images/favicon_32x32.png?@@fingerprint" type="image/x-icon")
+    link(rel="icon" href="images/favicon_32x32.png?v=@@fingerprint" type="image/x-icon")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri")
-    link(rel="stylesheet" type="text/css" href="./styles/styles.min.css?@@fingerprint")
+    link(rel="stylesheet" type="text/css" href="./styles/styles.min.css?v=@@fingerprint")
+    script(src="./scripts/environment.min.js?v=@@fingerprint")
     title The Unserious Manifest
   body
     +viewport()
       block content
+    +footer()
+    script(src="./scripts/scripts.min.js?v=@@fingerprint")

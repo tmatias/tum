@@ -4,10 +4,15 @@
 html,
 body
   margin 0
-  padding 0
   color $color-darkest
   font-size $font-size-sm
   font-family $font-family-primary
+
+body
+  position relative
+  padding 0 0 84px
+  min-height 100vh
+  box-sizing(border-box)
 
 p
   margin 0
@@ -24,3 +29,26 @@ a
   &:focus,
   &:active
     color $color-blue
+
+input,
+textarea,
+button
+  font-size $font-size-sm
+  -webkit-appearance none
+  border-radius(3px)
+  box-sizing(border-box)
+  &:focus,
+  &:active
+    outline 0
+
+input,
+button
+  line-height 30px
+
+input,
+textarea
+  padding 5px
+  width 100%
+  border 1px solid $color-grey
+
+placeholder($color-grey)

@@ -14,12 +14,20 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-babel-minify": "^0.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-stylus": "^2.6.0",
+    "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1",
+    "webpack": "^3.8.1",
+    "webpack-stream": "^4.0.0",
     "yargs": "^9.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.0"
   }
 }

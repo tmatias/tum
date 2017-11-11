@@ -1,4 +1,14 @@
 {
+  "scripts": {
+    "src": {
+      "files": "src/scripts/**/*.js",
+      "entry": "src/scripts/index.js"
+    },
+    "dist": {
+      "root": "dist/scripts/",
+      "filename": "scripts.min.js"
+    }
+  },
   "templates": {
     "src": {
       "files": [
@@ -30,6 +40,23 @@
     },
     "dist": {
       "root": "dist/images"
+    }
+  },
+  "data": {
+    "src": {
+      "files": "src/data/**/*.*"
+    },
+    "dist": {
+      "root": "dist/data"
+    }
+  },
+  "environments": {
+    "source": {
+      "root": "environments"
+    },
+    "dist": {
+      "root": "dist/scripts",
+      "filename": "environment.min.js"
     }
   }
 }

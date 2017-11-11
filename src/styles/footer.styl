@@ -1,0 +1,18 @@
+@require '_variables'
+@require '_mixins'
+
+.footer-container
+  position absolute
+  left 0
+  right 0
+  bottom 0
+
+.footer
+  position relative
+  padding 20px
+  text-align center
+  border-top 1px solid alpha($color-grey, .5)
+  box-sizing(border-box)
+  clearfix()
+  .menu
+    display inline-block

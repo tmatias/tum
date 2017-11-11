@@ -9,11 +9,11 @@ dependencies:
 
 compile:
   override:
-    - npm run build
+    - npm run build --env=prod
 
 test:
   override:
-    - echo "This project only contains markup and styles and has no tests"
+    - echo "No tests"
 
 deployment:
   master:
