@@ -1,0 +1,18 @@
+@require '_mixins'
+
+.manifest
+  position relative
+  .logo
+    position absolute
+    top 0
+    right 110%
+    width 142px
+    height 132px
+
++breakpoint('xs-sm')
+  .manifest
+    .logo
+      position relative
+      left 0
+      right 0
+      margin-bottom 30px

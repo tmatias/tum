@@ -2,7 +2,7 @@ include ./form-group.pug
 
 mixin sign-form
   .sign-form
-    h2 Sign
+    h1 Sign
     #mc_embed_signup
       form#mc-embedded-subscribe-form.validate(action="https://theunseriousmanifest.us17.list-manage.com/subscribe/post?u=efab485add1235157d2af1ed5&id=62de1adeb5", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate="")
         #mc_embed_signup_scroll
@@ -26,4 +26,4 @@ mixin sign-form
             input(type="text", name="b_efab485add1235157d2af1ed5_62de1adeb5", tabindex="-1", value="")
           +form-group()
             .clear
-              button#mc-embedded-subscribe.button.button-block(type="submit", name="subscribe") Sign
+              button#mc-embedded-subscribe.button(type="submit", name="subscribe") Get Me In

@@ -1,18 +1,29 @@
 @require '_variables'
 @require '_mixins'
+@require 'viewport'
+
+$footer-height = 60px
 
 .footer-container
-  position absolute
+  position fixed
   left 0
   right 0
   bottom 0
 
 .footer
   position relative
-  padding 20px
-  text-align center
+  height $footer-height
+  background-color $color-lightest
   border-top 1px solid alpha($color-grey, .5)
   box-sizing(border-box)
   clearfix()
+  .menu-container
+    position absolute
+    top 50%
+    left 0
+    right 0
+    transform('translate(0,-50%)')
   .menu
-    display inline-block
+    margin 0 auto
+    width $viewport-width
+    max-width $viewport-max-width

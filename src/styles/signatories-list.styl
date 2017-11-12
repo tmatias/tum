@@ -1,0 +1,19 @@
+@require '_variables'
+
+.signatories-list
+  margin 0
+  padding 0
+  list-style-type none
+
+.signatories-list-item
+  padding 25px 0
+  &:not(:first-child)
+    border-top 1px solid $color-grey-light
+
+.signatories-list-item-name
+  font-size $font-size-lg
+
+.signatories-list-item-date
+  margin-top 5px
+  color $color-grey
+  font-size $font-size-xs

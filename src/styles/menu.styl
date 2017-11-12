@@ -1,4 +1,5 @@
 @require '_mixins'
+@require 'native'
 
 .menu
   ul
@@ -7,6 +8,14 @@
     list-style-type none
     clearfix()
   li
+    @extends h1
     float left
+    margin 0
     & + li
-      margin-left 20px
+      margin 0 0 0 25px
+
++breakpoint('xs')
+  .menu
+    li
+      & + li
+        margin 0 0 0 15px

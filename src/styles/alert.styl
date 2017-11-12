@@ -1,0 +1,16 @@
+@require '_variables'
+
+alert-content($color)
+  color $color
+  border-color $color
+
+.alert
+  padding 10px 10px 10px 20px
+  border-width 0 0 0 1px
+  border-style solid
+  box-sizing border-box
+  alert-content($color-grey-dark)
+  &.alert-success
+    alert-content($color-blue)
+  &.alert-error
+    alert-content($color-red)
